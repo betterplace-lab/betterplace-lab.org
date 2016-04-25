@@ -1,0 +1,92 @@
+.top-main-menu{
+  nav {
+    min-height: auto;
+    margin-bottom: 0;
+    border-radius: 0;
+    border:0;
+  }
+  .navbar-toggle {background-color: @black;}
+  .navbar-collapse {
+    padding: 0 0 8px 0;
+    &:before, &:after {
+      content: '';
+      display: block;
+      width: 50%;
+      height: 50px;
+      .beton-img;
+      background-color: @intro;
+      position: absolute;
+      z-index: 0;
+      top: 0;
+    }
+    &:after {
+      background-color: @kontakt;
+      right: 0;
+    }
+    .container-md {
+      position: relative;
+      z-index: 1;
+    }
+    a {
+        text-transform: lowercase;
+        display: inline-block;
+        color: @white;
+        font-weight: 700;
+        .font-size(15);
+        text-align: center;
+        padding: 0; 
+        line-height:@nav-height;
+        width: 100%;
+
+        &:hover, &:focus {          
+          text-decoration: none;
+          background-color: transparent;
+        }
+      }
+  }
+.nav-extension {
+    display: inline;
+    div {
+      text-align: center;
+      display: inline-block;
+      float: left;
+      width: 14.285714285714285714285714285714%;
+      .beton-img;
+      &:nth-child(1) {background-color: @intro;}
+      &:nth-child(2) {background-color: @search;}
+    }
+  } 
+  ul { 
+  float: none;   
+    li {
+      text-align: center;
+      width: 14.285714285714285714285714285714%;
+      float: left;
+      .beton-img;
+      &:hover{background-color: none !important;}
+      &:nth-child(1) {background-color: @im-labor; }
+      &:nth-child(2) {background-color: @angebote;}
+      &:nth-child(3) {background-color: @das-team;}
+      &:nth-child(4) {background-color: @blog;}
+      &:nth-child(5) {background-color: @kontakt;}      
+    }
+  }
+} 
+.top-main-menu .navbar-collapse { .beton-img;}
+.search-results .top-main-menu .navbar-collapse {  background: @search; z-index: 1;}
+.category-lab, .category-labor, .single.labor, .single.lab { .top-main-menu .navbar-collapse {  background-color: @im-labor;}}
+.page-id-919, .parent-pageid-919, .page-id-1143, .parent-pageid-1143 {.top-main-menu .navbar-collapse {  background-color: @angebote;}}
+.page-id-916, .parent-pageid-916, .page-id-1137, .parent-pageid-1137 {.top-main-menu .navbar-collapse {  background-color: @das-team;}}
+.category-3, .category-blog, .single.blog, .single.blog-en  {.top-main-menu .navbar-collapse {  background-color: @blog;}}
+.page-id-911, .page-id-1148 {.top-main-menu .navbar-collapse {  background-color: @kontakt;}}
+
+
+@media screen and (max-width: @screen-sm-max) {  
+  .top-main-menu {
+      .nav-extension div a, .navbar-collapse a,  form input {
+      .font-size(11);
+    }
+  }
+   .top-main-menu form {.font-size(11);}
+   .top-main-menu form input {.font-size(11) !important;}
+}

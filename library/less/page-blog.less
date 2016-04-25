@@ -1,0 +1,50 @@
+//Category Blog: ID 5 Category Blog-en: ID 20
+.category-blog .content, .category-3 .content {margin-top: 25px;}
+article, #comments .category-blog, .pagi{
+    background-color: rgba(255, 255, 255, 0.6); 
+    .container {
+    	padding-top: @grid-gutter-width;
+    	padding-bottom: @grid-gutter-width;
+    	margin-bottom:@grid-gutter-width;
+    	img {margin-bottom: @grid-gutter-width/2;}
+    }
+}
+.prev-post, .next-post {
+	a {
+		display: inline-block;
+		margin: 5px -8px 5px -8px;
+		&:before {
+			.font-size(8);
+			height: 30px;
+			margin-top: 6px;
+		}
+	}
+}
+.prev-post {
+	a:before {		
+		.icon-previous-post-arrowI;
+		float: left;
+		margin-right: 10px;
+		}
+	}
+
+// Blog Seite
+.next-post {
+	text-align: right;
+	a {
+	&:before {
+		.icon-next-post-arrowI;
+		float: right;
+		margin-left: 10px;
+		}
+	}
+}
+.meta {
+	.font-size(9);
+}
+@media screen and (max-width: @screen-xs-max) {  
+	.prev-post a, .next-post a{
+		margin: 5px;
+		&:before{height: auto;}
+	}
+}

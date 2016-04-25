@@ -1,0 +1,44 @@
+// category-1: labor, category-25: labor-en
+.home-cat, .category-labor, .category-1291, .category-lab {
+	.header-box {background-color: @im-labor; }
+	.entry-header {
+		text-align: center;
+		padding: @grid-gutter-width/2;
+		h2 a {
+			color: @im-labor;
+			.font-size(20);
+		}
+	}
+	// Hintergrundbild multiimage plugin
+	.post-beton-img, .post-second-img  {
+		min-height: 200px;
+		width: 100%;
+		text-align: center;
+		margin-top: 0;
+		padding: 2% 0 5% 0;
+		h1 {
+			.make-xs-column(12);
+			.make-sm-column(10);
+			.make-sm-column-offset(1);	
+			.make-md-column(8);
+			.make-md-column-offset(2);			
+			color: @white;
+			padding: @grid-gutter-width/2 0;
+		}
+	}
+	.post-beton-img {
+		.beton-img;
+		background-color: @im-labor;
+	}
+	.post-second-img {
+		background-color: @im-labor !important;		
+		background-position: top center !important;
+		background-repeat: no-repeat !important;
+		background-size: cover !important;
+	}
+}
+@media screen and (max-width: @screen-md-max) {  
+	.category-1291, .category-1309{
+		.entry-header {padding-left: @grid-gutter-width/4 ;padding-right: @grid-gutter-width/4;}
+	}
+}

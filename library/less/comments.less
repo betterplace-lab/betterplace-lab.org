@@ -1,0 +1,25 @@
+
+.comments-area {
+  .related-posts,.comment-list {
+    padding-left: 0;
+    list-style: none;
+  }
+  .comment-list {
+  	border-top: 2px solid @im-labor;
+  	.comment.media {
+	  	border-bottom: 2px solid @im-labor;
+	  	padding: @grid-gutter-width;
+	  	img {margin-right: @grid-gutter-width/2;}
+	  }
+  }
+  .children {
+    padding-left: @grid-gutter-width/2;
+    .comment.media  {border-bottom: 0; border-top: 1px dashed @im-labor; padding-left: 0; list-style: none;}
+  }
+}
+.comment {
+  p {
+    word-wrap:break-word;
+  }
+
+}

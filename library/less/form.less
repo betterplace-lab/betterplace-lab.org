@@ -1,0 +1,115 @@
+.top-main-menu form, .content .content-form form{
+  position: relative;
+  height: @nav-height;
+  color:@white;
+  .font-size(18);
+  font-weight: 700;
+  line-height: @nav-height;
+  button {
+    position: absolute;
+    border:0;
+    left: 0;
+    background-color: transparent;
+    &:after{
+      content: '|';
+      font-weight: 700;
+    }
+  }
+  i{.font-size(14); font-weight: 400;}
+  input {
+    background-color: transparent;
+    border:0;
+    .font-size(14);
+    height: @nav-height;
+    color:@white;
+    padding-left: 50px;
+    height: @nav-height;
+    text-transform: lowercase;
+  }  
+  placeholder {.font-size(16); color: @white;}
+}
+ .content .content-form form input {
+  margin-top: 20px;
+  .beton-img;
+  background-color: @search;
+}
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+textarea:focus::-webkit-input-placeholder { color:transparent; }
+textarea:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+textarea:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+.content, .sidebar, .comments-area{
+  input, textarea {
+    width: 100%;
+    border: 1px solid @angebote;
+    border-radius: 6px;
+    padding: @grid-gutter-width/4;
+    margin-bottom: 8px;
+    font-style: normal;
+    &.wpcf7-not-valid{
+      border-color: @das-team;
+    }    
+  }
+  input::-webkit-input-placeholder { font-style: italic; }
+  input::-moz-placeholder { font-style: italic; } /* firefox 19+ */
+  input:-ms-input-placeholder { font-style: italic; } /* ie */
+  input:-moz-placeholder { font-style: italic; }
+  textarea::-webkit-input-placeholder { font-style: italic; }
+  textarea::-moz-placeholder { font-style: italic; } /* firefox 19+ */
+  textarea:-ms-input-placeholder { font-style: italic; } /* ie */
+  textarea:-moz-placeholder { font-style: italic; }
+}
+.content form, .comments-area form{
+  input[type="submit"] {
+    background-color: @angebote;
+    color: @white;
+    font-style: normal;
+    font-weight: 700;
+    width: auto;
+    padding-left: @grid-gutter-width;
+    padding-right: @grid-gutter-width;
+  }
+
+   div.wpcf7-response-output  {
+    border-radius: 6px;
+    border: 1px solid @search;
+    margin: 0 0 @grid-gutter-width 0;
+    background-color: @white;
+    &.wpcf7-validation-errors {boder-color: @search;    }
+    &.wpcf7-mail-sent-ng {boder-color: @das-team;    }
+    &.wpcf7-mail-sent-ok {boder-color: @angebote;}
+  }
+  .text-right {font-style: italic; color: @gray-light;}
+  p{margin-bottom: 0;}
+}
+.comment-respond {margin-bottom: @grid-gutter-width;}
+.sidebar, .dropdown-input-nav {
+  input {
+    border-color: @white;
+  }
+  button {
+    position: absolute;    
+    .btn-reset;
+    right: 20px;
+    top: 25px;
+    i {
+      .font-size(20);
+      color:#BBCB00;
+    }
+  }
+}
+.dropdown-input-nav input {
+  margin: 0px auto;
+  border-radius: 15px;
+  width: 90%;
+  padding: 20px 10px;
+}
+.home .sidebar button { top: auto; right: auto; margin: 5px 0 0 -50px; i {.font-size(22);}}
+.widget form input {color: @gray-light;}
+
+@media screen and (max-width: @screen-xs-max) {  
+  .widget form input  placeholder {.font-size(16); color: @white;}
+}

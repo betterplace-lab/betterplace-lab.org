@@ -1,0 +1,47 @@
+.sidebar {
+	background-color: @gray;
+	.two-cols-offset {
+		.make-sm-column(6);
+		.make-md-column(5);
+		.make-md-column-offset(1);
+		.make-lg-column(4);
+	}
+	.two-cols {
+		.make-sm-column(6);
+		.make-md-column(6);
+		.make-lg-column(7);
+		aside {text-align: center;}
+	}
+	i {
+		.font-size(27);
+		color: @white;
+		margin: 0 2px;
+	}
+	aside {		
+		padding: 20px 0 @grid-gutter-width/2 0;
+		text-align: center;
+	}
+}
+.sidebar-home {
+	position: relative;
+	&:before {
+	min-height: 350px;
+      content: '';
+      display: block;
+      width: 50%;
+      background: url('images/homepage-newsletter-signup-bck.jpg') left bottom repeat-x;
+      position: absolute;  
+      bottom: 0; 
+    }
+    background: url('images/homepage-social-media-bck.jpg') left bottom repeat-x;
+	text-align: center;
+	color: @white;
+	h2 {color: @white; padding-top: @grid-gutter-width*2; .font-size(24);}
+	p {.font-size(12); padding-bottom: @grid-gutter-width*2;}
+	.home-left, .home-right {min-height: 350px;}
+	.home-left {background: url('images/homepage-newsletter-signup-bck.jpg') left bottom no-repeat;	}
+	.home-right {background: url('images/homepage-social-media-bck.jpg') left bottom no-repeat;}
+	input {
+		width: 70%;
+	}
+}

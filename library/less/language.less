@@ -1,0 +1,31 @@
+#top-header {
+	.widget_polylang {
+		position: absolute;
+		right: 0;
+		z-index: 5;
+		ul {list-style: none;}
+		/* .lang-item-en a {
+			background: url('svg/english.svg') no-repeat;
+			display: inline-block;
+			height: 25px;
+			width: 35px;
+			background-size: 30px 20px;
+			img {display: none;}
+		} */
+	}
+	
+}
+
+
+@media screen and (max-width: @screen-xs-max) {  
+#top-header {
+	.dropdown-menu li.lang-item{display: block;}
+		.dropdown-toggle{ padding-right: 0;}
+		.widget_polylang {display: none;}
+	}
+}
+
+
+
+
+ #top-header .dropdown-menu > li.lang-item > a  {.visible-xs;}

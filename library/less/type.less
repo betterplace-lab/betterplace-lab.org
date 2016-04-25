@@ -1,0 +1,71 @@
+html, body {
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+body {
+	font-weight: 400;
+}
+.align-right {
+	text-align: right;
+}
+.align-left {
+	text-align: left;
+}
+/*
+ * Textformatierung
+ */
+ h1, h2, h3, h4, h5 {
+ 	font-weight: 300;
+ 	margin-top: 0; 	
+ }
+h1 {
+	margin-top: 20px;
+}
+h2, h3, h4 { color: @text-color; line-height: 1.2em; margin-bottom: @grid-gutter-width/2;}
+
+
+strong,b {font-weight: 600;}
+p {margin-bottom: 15px;}
+h1{ .font-size(26); margin-bottom: 22px;}
+h2{  .font-size(18);}
+h3{  .font-size(14);}
+h4{ .font-size(13); font-weight: normal;}
+h5{  .font-size(13); font-weight: bolder;}
+i {font-style: italic;}
+.align-center {
+	text-align: center;
+}
+.related-post-hl {.font-size(26); margin-bottom: 22px;}
+.post {
+	h1, h3 {color: @gray-light;	}
+	h2 {color: @angebote;}
+}
+.search-results h2 {text-align: center;}
+.category-labor .post-content, .category-lab .post-content {
+	h2 {color: @gray;}
+	a {color: @im-labor;}
+}
+.parent-pageid-919, .parent-pageid-1143 {h1,h2 {color: @angebote;}}
+.search-results, .search-no-results, .error404 {
+	h1 {
+		color:@search; 
+		text-align: center;
+		margin: 50px 0 30px 0;
+	}
+	p {text-align: center;}
+}
+.search-results .textwidget p{text-align: left;}
+/*Read More Links*/
+.read-more{   color: @im-labor;}
+@media screen and (max-width: @screen-xs) {  
+	p {.font-size(10);}
+	h1, .related-post-hl {
+		font-size: 6.5vw;
+	}
+	h2, h2 a, .category-labor .entry-header h2 a {
+		font-size: 6vw;
+	}
+}

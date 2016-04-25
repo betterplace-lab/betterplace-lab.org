@@ -1,0 +1,166 @@
+//== Colors
+              
+@gray:                  #2F2F2F;
+@gray-dark: #212121;
+
+@gray-light: #777;
+
+
+
+@intro: #c1d003;	
+@intro-hover :#b1c302;
+@search :#db5a1f;
+@search-hover :#d34918;
+@im-labor :#1c9ecc;
+@im-labor-hover :#168cc1; 
+@angebote :#6c902d;
+@angebote-hover :#5a7d23;
+@das-team :#cf142b;
+@das-team-hover :#a61222;
+@blog :#686d72;
+@blog-hover :#565b5f;
+@kontakt :#054d78;
+@kontakt-hover :#043e65;
+
+@light-blue: #5FCEDF;
+@white: 			#ffffff;
+@black: 			#000000;
+
+@content-margin: 40px;
+
+//** Background color for `<body>`.
+@body-bg:               #ffffff;
+//** Global text color on `<body>`.
+@text-color:           #6d7374;
+
+//** Global textual link color.
+@link-color:            @angebote-hover;
+//** Link hover color set via `darken()` function.
+@link-hover-color:      darken(@link-color, 15%);
+
+@nav-height: 50px;
+@input-color-placeholder:        @white;
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+@font-family-sans-serif:  'Open Sans', Verdana, Arial, sans-serif;
+@font-family-serif:       Georgia, Times, serif;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+@font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-family-base:        @font-family-sans-serif;
+
+@font-size-base:          13px;
+@font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
+@font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
+
+//** Unit-less `line-height` for use in components like buttons.
+@line-height-base:        1.5; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
+
+//** By default, this inherits from the `<body>`.
+@headings-font-family:    inherit;
+@headings-font-weight:    600;
+@headings-line-height:    1.1;
+@headings-color:          inherit;
+
+
+@breadcrumb-separator:          ">";
+
+@input-margin: 25px;
+@input-padding: 15px;
+@breadcrumb-bg:                 #ffffff;
+//** Breadcrumb text color
+
+
+//table
+@table-border-color:            #dde5e7;
+//Modal
+//** Padding applied to the modal body
+@modal-inner-padding:         15px;
+
+//** Padding applied to the modal title
+@modal-title-padding:         5px 10px;
+//** Modal title line-height
+@modal-title-line-height:     @line-height-base;
+
+//** Background color of modal content area
+@modal-content-bg:                            @gray-light;
+
+
+//** Modal backdrop background color
+@modal-backdrop-bg:           #000;
+//** Modal backdrop opacity
+@modal-backdrop-opacity:      .8;
+
+
+//** Padding for `<th>`s and `<td>`s.
+@table-cell-padding:            8px;
+//** Padding for cells in `.table-condensed`.
+@table-condensed-cell-padding:  5px;
+
+//** Default background color used for all tables.
+@table-bg:                      transparent;
+//** Background color used for `.table-striped`.
+@table-bg-accent:               @gray-lighter;
+//** Background color used for `.table-hover`.
+@table-bg-hover:                @gray-light;
+@table-bg-active:               @table-bg-hover;
+
+//** Border color for table and cell borders.
+@table-border-color:            #ddd;
+
+
+//== Media queries breakpoints
+//
+
+
+// Medium screen / desktop
+
+
+//@screen-md-min:              @screen-md;
+//** Deprecated `@screen-desktop` as of v3.0.1
+//@screen-desktop:             @screen-md-min;
+
+@screen-lg-desktop:          @screen-md-min;
+@container-lg:                 @container-desktop;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max:              (@screen-sm-min - 1);
+@screen-sm-max:              (@screen-md-min - 1);
+@screen-md-max:              (@screen-lg-min - 1);
+
+
+@grid-columns:              12;
+//** Padding between columns. Gets divided in half for the left and right.
+@grid-gutter-width:        30px;
+// Navbar collapse
+//** Point at which the navbar becomes uncollapsed.
+@grid-float-breakpoint:     @screen-sm;
+//** Point at which the navbar begins collapsing.
+@grid-float-breakpoint-max: (@grid-float-breakpoint - 1);
+
+//== Container sizes
+//
+//## Define the maximum width of `.container` for different screen sizes.
+// Small screen / tablet
+
+//** For `@screen-sm-min` and up.
+//@container-ms:                (650px + @grid-gutter-width);
+// Small screen / tablet
+@container-tablet:             (740px + @grid-gutter-width);
+//** For `@screen-sm-min` and up.
+@container-sm:                 @container-tablet;
+
+// Medium screen / desktop
+@container-desktop:            (940px + @grid-gutter-width);
+//** For `@screen-md-min` and up.
+@container-md:                 @container-desktop;
+
+// Large screen / wide desktop
+@container-large-desktop:      (1150px + @grid-gutter-width);
+//** For `@screen-lg-min` and up.
+@container-lg:                 @container-large-desktop;
+

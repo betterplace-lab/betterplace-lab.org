@@ -1,0 +1,30 @@
+/* Footer */
+footer{
+    background-color: @gray-dark;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: @white;
+
+    h3, h4, h5, h6 {
+        margin-bottom: 20px;
+        .font-size(12);
+        text-transform: none;
+        font-weight: bold;
+        color: @white;
+    }
+    ul {
+        padding-left: 0;
+        li {
+            list-style: none;
+            a, a:hover, a:focus {color: @white;}
+        }
+    } 
+}
+@media screen and (max-width: @screen-xs-max) {  
+    .row-xs {
+        .row;
+        margin-left: 0;
+        margin-right: 0;
+        .clearfix;
+    }
+}
