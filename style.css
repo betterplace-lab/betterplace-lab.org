@@ -4872,10 +4872,10 @@ figure img {
 figure figcaption {
   text-align: center;
 }
-[id^="attachment_"],
-[id*=" attachment_"] {
-  width: inherit !important;
-}
+/* [id^="attachment_"], [id*=" attachment_"] {
+	width: inherit !important;
+
+} */
 iframe {
   max-width: 100%;
 }
@@ -4890,6 +4890,10 @@ iframe {
   .single-post img.alignleft {
     float: none;
   }
+}
+.alignleft {
+  float: left;
+  margin-right: 15px;
 }
 .lab-navigation-wrapper ul li {
   width: 100%;

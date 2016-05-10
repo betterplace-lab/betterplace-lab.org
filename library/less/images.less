@@ -17,10 +17,10 @@ figure {
 	text-align: center;
 	}	
 }
-[id^="attachment_"], [id*=" attachment_"] {
+/* [id^="attachment_"], [id*=" attachment_"] {
 	width: inherit !important;
 
-}
+} */
 iframe {max-width: 100%;}
 @media screen and (max-width: @screen-md-max) {  
 		img {
@@ -32,4 +32,8 @@ iframe {max-width: 100%;}
 		.content img.alignleft, .single-post img.alignleft {
 			float: none;
 		}
+}
+.alignleft {
+	float: left;
+	margin-right: @grid-gutter-width/2;
 }
